@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>h<b>Merylimpressum</b>.</title>
+    <link rel="stylesheet" href="UnterseiteHobby.css" />
+</head>
+
+<body>
+    <div class="links">
+        <ul class="menu">
+            <li><a HREF="UnterseiteHobby.html">Meine Hobbies sind wie folgt </a></li>
+            <li><a HREF="testetstst.html"> Mein Studium ist wie folgt</a></li>
+            <li><a HREF="UnterseiteImpressum.html"> Mein Impressum </a></li>
+        </ul>
+    </div>
+    <div class="x">
+        <p id="imageText">Dynamic Text</p>
+        <img id="timeofdayimg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+    </div>
+
+    <script type="text/javascript">
+
+        var tagesZeit = document.getElementById('timeofdayimg');
+        var imageText = document.getElementById('imageText'); 
+
+        function updateImage() {
+            var date = new Date();
+            var hour = (date.getHours());
+
+            if (hour > 13 && hour<20) {
+                imageText.textContent = "Bladee WOD  (2017) Es ist "+ hour+ " Uhr irgendwas ";
+                tagesZeit.src="https://t2.genius.com/unsafe/891x0/https%3A%2F%2Fimages.genius.com%2F91a797e97967ccf6949f6021c05a8d80.1000x1000x1.jpg";
+            } else if (hour > 19 && hour<23) {
+                imageText.textContent = "Bladee Icedancer (2018)Es ist "+ hour+ " Uhr irgendwas ";
+                tagesZeit.src="https://t2.genius.com/unsafe/891x0/https%3A%2F%2Fimages.genius.com%2F5a4e31fbb670fe7c833933780c2f016a.1000x1000x1.png";
+            } else {
+                imageText.textContent = "Madonna Ray of LIght (1988)  Es ist "+ hour+ " Uhr irgendwas";
+                tagesZeit.src="https://t2.genius.com/unsafe/891x0/https%3A%2F%2Fimages.genius.com%2F1975c1eb125ca4859f1314a97ef4232d.1000x1000x1.jpg";
+            }
+        }
+
+        updateImage();
+
+
+    </script>
+
+    <script type="text/javascript" class="Zwei">
+
+    </script>
+
+    <P>hiddenLink<BR>
+    <A HREF="LinkTest.html">CREST</A>
+    </P>
+   <P><BR>
+<A HREF="https://genius.com/Ecco2k-cc-lyrics">Carbon Copy?</A>
+</P>
+
+    <address> Bolzstraße 25 <br></address>
+    <address>70806 <br></address>
+    <address>Kornwestheim <br></address>
+    <address>Deutschland <br></address>
+    <address>01111 01929292 <br></address>
+    <address>EMAIL: glo@gloglo.glo <br></address>
+
+</body>
+</html>
